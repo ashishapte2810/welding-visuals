@@ -1,0 +1,3 @@
+{ "name": "welding-visuals-scripts", "private": true, "type": "module",
+  "description": "Verification and export scripts. Run `npm install` once in this folder.",
+  "dependencies": { "jsdom": "^24.1.0", "@resvg/resvg-js": "^2.6.2" } }
