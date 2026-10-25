@@ -1,0 +1,293 @@
+{
+ "_doc": "read: full | excerpt | snippet (search-result text only) | not-read. Labels are what appears on screen; keep author names out of a label until authorship is verified. A claim may cite a page with 'id:page' (for example awshb9-v2p1:119); books have no url and are shown without a link.",
+ "sources": {
+  "us4419558": {
+   "id": "us4419558",
+   "label": "US 4419558, background section (resistance welding monitoring/control)",
+   "type": "patent",
+   "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4419558",
+   "read": "snippet",
+   "note": "Gives the squeeze / weld / hold / off sequence."
+  },
+  "us5349153": {
+   "id": "us5349153",
+   "label": "US 5349153, background section (spot welding electrode, coated metals)",
+   "type": "patent",
+   "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5349153",
+   "read": "snippet",
+   "note": "I2R at electrode-sheet and sheet-sheet interfaces; highest heat between sheets; forging pressure; hold time and cooling."
+  },
+  "nstu-rsw-almg": {
+   "id": "nstu-rsw-almg",
+   "label": "NSTU, resistance spot welding of an Al-5Mg alloy (parameters)",
+   "type": "journal",
+   "url": "https://journals.nstu.ru/files/articles/flash/40461_en/h/",
+   "read": "snippet",
+   "note": "Heat max at contact interface; copper conductivity and water cooling; zones; expulsion definition. Alloy is aluminium, not steel."
+  },
+  "osaka-jwri39-166": {
+   "id": "osaka-jwri39-166",
+   "label": "Osaka Univ. JWRI, nugget formation in multi-sheet stack-ups",
+   "type": "journal",
+   "url": "https://ir.library.osaka-u.ac.jp/repo/ouka/all/9583/jwri39_02_166.pdf",
+   "read": "snippet",
+   "note": "Nugget develops first at the sheet-to-sheet interface; water-cooled copper electrodes."
+  },
+  "hirsch-leibovitz-unitrol": {
+   "id": "hirsch-leibovitz-unitrol",
+   "label": "Hirsch and Leibovitz (Unitrol Electronics), electrode force in resistance welding, conference paper (venue not stated in the document)",
+   "type": "conference-paper",
+   "url": "https://tjsnow.com/wp-content/uploads/2015/05/awspape2color.pdf",
+   "read": "full",
+   "note": "Read in full. Low force or early current -> expulsion, heavier indentation, electrode face growth; long weld time can also expel; high force -> shallow, low-ductility nuggets; squeeze time lets force build. Company paper with test data on cold-rolled and galvanized steel. Cites RWMA Resistance Welding Manual 4th ed."
+  },
+  "wikipedia-erw": {
+   "id": "wikipedia-erw",
+   "label": "Electric resistance welding (Wikipedia)",
+   "type": "web",
+   "url": "https://en.wikipedia.org/wiki/Electric_resistance_welding",
+   "read": "snippet",
+   "note": "Expulsion leaves a thinner, weaker weld. Tertiary source."
+  },
+  "awsforum-126723": {
+   "id": "awsforum-126723",
+   "label": "AWS forum, practitioner discussion on squeeze time",
+   "type": "forum",
+   "url": "https://app.aws.org/forum/topic_show.pl?pid=126723",
+   "read": "snippet",
+   "note": "Practitioner opinion: tighter contact lowers resistance. Not a formal source."
+  },
+  "osu-we601-slides": {
+   "id": "osu-we601-slides",
+   "label": "Ohio State welding engineering course slides, resistance welding",
+   "type": "teaching",
+   "url": "https://www.slideshare.net/slideshow/resistance-welding-1443168/1443168",
+   "read": "snippet",
+   "note": "Shows the four-interval cycle and cites AWS Welding Handbook Vol. 2 p. 538 (edition not stated). Handbook not read."
+  },
+  "asee-solidification": {
+   "id": "asee-solidification",
+   "label": "ASEE paper, solidification concepts through organic analogs of welding",
+   "type": "teaching",
+   "url": "https://strategy.asee.org/exploring-solidification-concepts-through-organic-crystalline-analogs-welding-organic-crystalline-materials.pdf",
+   "read": "snippet",
+   "note": "Epitaxial growth, growth roughly perpendicular to the pool boundary."
+  },
+  "iitkgp-weldzone": {
+   "id": "iitkgp-weldzone",
+   "label": "IIT Kharagpur virtual lab, weld zone evaluation",
+   "type": "teaching",
+   "url": "https://wl-iitkgp.vlabs.ac.in/exp/weldzone-evaluation/theory.html",
+   "read": "snippet",
+   "note": "Fusion zone, partially melted zone, HAZ definitions."
+  },
+  "dtic-ada137272": {
+   "id": "dtic-ada137272",
+   "label": "DTIC ADA137272",
+   "type": "report",
+   "url": "https://apps.dtic.mil/sti/pdfs/ADA137272.pdf",
+   "read": "snippet",
+   "note": "Epitaxial grain growth at the fusion boundary / HAZ interface."
+  },
+  "yarmuch-patchett-2007": {
+   "id": "yarmuch-patchett-2007",
+   "label": "Yarmuch and Patchett, Welding Journal, July 2007, 86(7): 196-s (American Welding Society)",
+   "type": "journal",
+   "url": "https://app.aws.org/wj/supplement/wj0707-196.pdf",
+   "read": "full",
+   "note": "Read in full. Five arc regions; thermionic emission at the tungsten cathode; about 60 to 80 percent of heat at the anode in DCEN GTAW. Paper concerns GTAW of aluminium; cites AWS Welding Handbook Vol. 2 p. 86 and Vol. 3 pp. 37-38."
+  },
+  "twi-polarity-faq": {
+   "id": "twi-polarity-faq",
+   "label": "TWI FAQ: electrode polarity",
+   "type": "web",
+   "url": "https://www.twi-global.com/technical-knowledge/faqs/faq-when-manual-metal-arc-welding-which-electrode-polarity-should-i-use",
+   "read": "snippet",
+   "note": "About two thirds of heat at the anode; tungsten cooled by thermionic emission."
+  },
+  "haynes-gtaw": {
+   "id": "haynes-gtaw",
+   "label": "Haynes International, GTAW guide",
+   "type": "manufacturer",
+   "url": "https://haynesintl.com/en/?p=126",
+   "read": "snippet",
+   "note": "DCEN, argon, HF start, pre/post purge, up/down slope."
+  },
+  "openwa-gtaw": {
+   "id": "openwa-gtaw",
+   "label": "Open WA welding textbook, GTAW equipment",
+   "type": "teaching",
+   "url": "https://openwa.pressbooks.pub/welding1/?p=1499",
+   "read": "snippet",
+   "note": "HF start without touching; preflow."
+  },
+  "us12343825": {
+   "id": "us12343825",
+   "label": "US 12343825, background section (TIG preflow/postflow/arc start)",
+   "type": "patent",
+   "url": "https://patents.google.com/patent/US12343825",
+   "read": "snippet",
+   "note": "Contact starts can leave tungsten traces."
+  },
+  "toolingu-gtaw331": {
+   "id": "toolingu-gtaw331",
+   "label": "Tooling U-SME, GTAW Applications 331",
+   "type": "training",
+   "url": "https://learn.toolingu.com/classes/gtaw-applications-331/",
+   "read": "snippet",
+   "note": "Argon heavier than air."
+  },
+  "jmep-sulfur-oxygen": {
+   "id": "jmep-sulfur-oxygen",
+   "label": "J. Mater. Eng. Perform., effect of sulfur and oxygen on weld penetration of austenitic stainless steels",
+   "type": "journal",
+   "url": "https://link.springer.com/doi/10.1007/s11665-997-0121-1",
+   "read": "snippet",
+   "note": "Sulfur and oxygen change penetration."
+  },
+  "mmtb-stationary-gta": {
+   "id": "mmtb-stationary-gta",
+   "label": "Metall. Mater. Trans. B, stationary GTA pool model",
+   "type": "journal",
+   "url": "https://www.doi.org/10.1007/S11663-001-0017-7",
+   "read": "snippet",
+   "note": "Pool convection model."
+  },
+  "oreper-szekely-1984": {
+   "id": "oreper-szekely-1984",
+   "label": "Oreper and Szekely, J. Fluid Mech. 147 (1984) 53-79, heat- and fluid-flow phenomena in weld pools",
+   "type": "journal",
+   "url": "https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/heat-and-fluidflow-phenomena-in-weld-pools/87813A7D92CEB80FFBC2184FF2205447",
+   "read": "excerpt",
+   "note": "Abstract and author list verified. Idealized TIG pool: electromagnetic, buoyancy and surface-tension forces; focused heat flux gives strong electromagnetic flow; surface-tension gradients can reshape the pool."
+  },
+  "mendez-graz": {
+   "id": "mendez-graz",
+   "label": "Conference paper hosted on P. Mendez's page, Univ. of Alberta (Mathematical Modelling of Weld Phenomena 5, 2000); author list not confirmed",
+   "type": "conference-paper",
+   "url": "https://sites.ualberta.ca/~pmendez/Publications/Papers/1999graz.pdf",
+   "read": "excerpt",
+   "note": "Read most of the text; first page with authors was not in the extract. Marangoni dominant under about 200 A; at about 305 A with a deeply depressed pool, gas shear dominates and sulfur has little effect."
+  },
+  "toolingu-gmaw251": {
+   "id": "toolingu-gmaw251",
+   "label": "Tooling U-SME, Introduction to GMAW 251",
+   "type": "training",
+   "url": "https://learn.toolingu.com/classes/introduction-to-gmaw-251/",
+   "read": "snippet",
+   "note": "CV source, DCEP, amperage set by wire feed speed, CTWD = extension + arc length."
+  },
+  "ewi-gmaw-basics": {
+   "id": "ewi-gmaw-basics",
+   "label": "EWI, GMAW basics: welding current and voltage",
+   "type": "web",
+   "url": "https://ewi.org/gas-metal-arc-welding-basics-welding-current-welding-voltage",
+   "read": "snippet",
+   "note": "Constant-voltage source and wire feed speed."
+  },
+  "mewelding-dcep": {
+   "id": "mewelding-dcep",
+   "label": "MIG welding basics (mewelding.com)",
+   "type": "web",
+   "url": "https://mewelding.com/wp-json/wp/v2/posts/180",
+   "read": "snippet",
+   "note": "DCEP most common."
+  },
+  "us5349156": {
+   "id": "us5349156",
+   "label": "US 5349156, background section (GMAW sensing)",
+   "type": "patent",
+   "url": "https://patents.google.com/patent/US5349156",
+   "read": "snippet",
+   "note": "Self-regulating arc length."
+  },
+  "us20200130094": {
+   "id": "us20200130094",
+   "label": "US 2020/0130094, background section (starting arc welding)",
+   "type": "patent",
+   "url": "https://patents.justia.com/patent/20200130094",
+   "read": "snippet",
+   "note": "Wire is run in to touch the work to start."
+  },
+  "us4079231": {
+   "id": "us4079231",
+   "label": "US 4079231, background section (touchwork MIG)",
+   "type": "patent",
+   "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4079231",
+   "read": "snippet",
+   "note": "High surge current at arc strike."
+  },
+  "us6013896": {
+   "id": "us6013896",
+   "label": "US 6013896, background section (GMAW method)",
+   "type": "patent",
+   "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6013896",
+   "read": "snippet",
+   "note": "Short-circuit transfer: current too low to detach the drop by electromagnetic force and weight."
+  },
+  "weldguru-transfer": {
+   "id": "weldguru-transfer",
+   "label": "WeldGuru, welding transfer modes",
+   "type": "web",
+   "url": "https://weldguru.com/?p=11097",
+   "read": "snippet",
+   "note": "Globular-to-spray transition in argon-rich gas; attributes detachment to pinch force."
+  },
+  "openwa-gmaw": {
+   "id": "openwa-gmaw",
+   "label": "Open WA, GMAW operation and techniques",
+   "type": "teaching",
+   "url": "https://openwa.pressbooks.pub/professorrn6893/?p=414",
+   "read": "snippet",
+   "note": "Spray: smooth, deeper penetration, ferrous needs at least 80 percent argon."
+  },
+  "kim-eagar-1993": {
+   "id": "kim-eagar-1993",
+   "label": "Kim and Eagar, Analysis of Metal Transfer in Gas Metal Arc Welding, Welding Journal, June 1993, 269-s",
+   "type": "journal",
+   "url": "https://eagar.mit.edu/publications/Eagar117.pdf",
+   "read": "full",
+   "note": "Read in full. Transition from globular to spray is gradual, not sharp; pinch-instability theory judged inappropriate for globular and projected spray; static force balance with electromagnetic force fits when electrode taper is accounted for; CO2 and He give repelled transfer; DCEP."
+  },
+  "jwjs-30-1": {
+   "id": "jwjs-30-1",
+   "label": "Q. J. Jpn. Weld. Soc. 30(1), metal transfer analysis",
+   "type": "journal",
+   "url": "https://www.jstage.jst.go.jp/article/qjjws/30/1/30_1_1/_article",
+   "read": "snippet",
+   "note": "Further analysis of metal transfer."
+  },
+  "wang-tsai-2001": {
+   "id": "wang-tsai-2001",
+   "label": "Wang and Tsai, Metall. Mater. Trans. B, 2001, effects of surface active elements on weld pool flow and penetration in GMAW (doi 10.1007/s11663-001-0035-5)",
+   "type": "journal",
+   "url": "https://scholarsmine.mst.edu/mec_aereng_facwork/2337",
+   "read": "excerpt",
+   "note": "Abstract and authors verified. Models SPOT GMAW (stationary pool): droplet impact momentum, electromagnetic force, Marangoni effect; sulfur can give inward or outward surface flow."
+  },
+  "awshb9-v2p1": {
+   "id": "awshb9-v2p1",
+   "label": "AWS Welding Handbook, 9th ed., vol. 2 (2004)",
+   "type": "book",
+   "url": "",
+   "read": "excerpt",
+   "note": "User-supplied PDF 'AWS_Welding_Handbook_Volume_2_-_Part_1.pdf'; title page says 9th ed., Welding Processes (preface calls it Part 2, contents and title say Part 1), (c) 2004 AWS. Read: ch.1 p.27, 41; ch.2 p.55; ch.3 GTAW pp.104-106, 113-116, 119, 128-130; ch.4 GMAW pp.150-154, 157, 164, 181, 183, 195-196. Printed page numbers (offset from PDF page varies). Scanned OCR: check numbers against the page image."
+  },
+  "awshb8-v3": {
+   "id": "awshb8-v3",
+   "label": "AWS Welding Handbook, 8th ed., vol. 3 (1996)",
+   "type": "book",
+   "url": "",
+   "read": "excerpt",
+   "note": "User-supplied PDF named 'ASM_Welding_Handbook.pdf' but its title pages say AWS Welding Handbook 8th ed., Vol. 3, Materials and Applications Part 1 (1996), ed. W. R. Oates; covers aluminium, magnesium, copper, nickel, etc., NOT steel. Read: ch.1 aluminium resistance welding pp.72-76 (Table 1.47 nugget diameters, Table 1.49 schedules)."
+  },
+  "awshb7-v1": {
+   "id": "awshb7-v1",
+   "label": "AWS Welding Handbook, 7th ed., vol. 1 (1976)",
+   "type": "book",
+   "url": "",
+   "read": "excerpt",
+   "note": "User-supplied PDF 'AWS_Welding_Handbook_Volume_1.pdf'; 7th ed., Fundamentals of Welding (1976). Read: survey of resistance welding pp.14-15; physics of resistance heating pp.39-40; glossary pp.296, 307, 313, 319. Prices and examples are 1974. Defers detailed resistance welding to a Volume 3 not supplied."
+  }
+ }
+}

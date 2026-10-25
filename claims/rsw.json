@@ -1,0 +1,369 @@
+{
+ "meta": {
+  "figure": "resistance-spot-welding",
+  "title": "What the figure shows, and how sure we are",
+  "unsourced": "Exact timings, force and current levels, the nugget's growth curve, the HAZ width, the indentation depth and the amount and direction of expelled metal are illustrative; no recommended-practice values (for example from AWS C1.1 or a welding schedule) were used. Handbooks consulted: 7th ed. vol. 1 (pp. 14-15, 39-40, glossary) and 8th ed. vol. 3 (aluminium resistance welding, pp. 72-76). The volume that covers resistance welding of steel (9th ed. vol. 3) and AWS C1.1 were not available.",
+  "simplified": "One weld on a two-sheet stack-up of equal sheets, in section. No coatings, sheet gaps, multi-sheet stacks, electrode wear, current waveform (AC or DC), pulsed or upslope current, forge force, or shunting. The nugget is an ellipse that grows then freezes inward; real nuggets are not elliptical and their growth depends on material, current, time and force. The heat-input toggle changes only the nugget size and adds an expulsion event. Sheet thickness is exaggerated against the electrodes, and the drawn nugget is narrower relative to the sheet thickness than handbook examples (about 3 to 5 times).",
+  "disclaimer": "For education only. This is not a welding schedule or procedure and does not replace your qualified procedure, applicable code, training or workplace safety rules."
+ },
+ "claims": [
+  {
+   "id": "rsw-h-elec",
+   "ui": "hover:elec",
+   "text": "Electrode: water-cooled copper alloy. It clamps the sheets, carries the welding current, and its cooling keeps the sheet surfaces below melting. Operators replace tips when they become worn or deformed; a test paper shows electrode faces growing over thousands of welds, which this figure does not show.",
+   "confidence": "literature",
+   "sources": [
+    "nstu-rsw-almg",
+    "hirsch-leibovitz-unitrol",
+    "awshb7-v1:15"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-water",
+   "ui": "hover:water",
+   "text": "Cooling water: flows through the electrodes and removes heat quickly. This is why the molten region stays between the sheets instead of at the electrode contact, and why the nugget solidifies quickly once current stops.",
+   "confidence": "literature",
+   "sources": [
+    "nstu-rsw-almg",
+    "osaka-jwri39-166",
+    "us5349153"
+   ],
+   "numbers_ok": false,
+   "note": "'Solidifies quickly' is an inference from cooling, not a measured statement.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-force",
+   "ui": "hover:force",
+   "text": "Electrode force: applied through the electrodes before, during and after the current. It clamps the sheets for good electrical contact and contains the molten metal at the center of the joint. Contact resistance is inversely proportional to the force, so higher forces need higher currents. Too low: poor contact and expulsion; too high: shallow nuggets with low ductility. The arrow length is a qualitative level.",
+   "confidence": "established",
+   "sources": [
+    "awshb7-v1:14",
+    "awshb7-v1:39",
+    "awshb7-v1:40",
+    "us5349153",
+    "hirsch-leibovitz-unitrol"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-sheet",
+   "ui": "hover:sheet",
+   "text": "Sheets (stack-up): two overlapping sheets clamped between the electrodes. Drawn in section, flat and schematic. Surface coatings, gaps and multi-sheet stacks are not shown.",
+   "confidence": "illustrative",
+   "sources": [],
+   "numbers_ok": false,
+   "note": "Describes what is drawn.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-fay",
+   "ui": "hover:fay",
+   "text": "Faying interface: the contact surface between the two sheets. Contact resistance here depends on cleanliness, oxides, roughness, the metals' resistivity and the force. In steel it largely disappears within the first half cycle, but the intense early heating it allows raises the metal's own resistance, so heat generation continues. Heat is generated at four resistances in the circuit (electrode-to-work, work-to-work, the work's body and the electrodes), and the highest heat is reported between the sheets, which is where the nugget starts.",
+   "confidence": "literature",
+   "sources": [
+    "awshb7-v1:39",
+    "awshb7-v1:40",
+    "us5349153",
+    "nstu-rsw-almg",
+    "osaka-jwri39-166"
+   ],
+   "numbers_ok": false,
+   "note": "Replaces the earlier simplification that interface resistance stays highest because of roughness and oxide. The 1976 handbook says that in steel it largely disappears in the first half cycle.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-nugget",
+   "ui": "hover:nugget",
+   "text": "Weld nugget (fusion zone): the weld metal joining the parts. Nugget size is its diameter measured in the plane of the interface. It starts at the faying interface and grows outward and through the thickness while current flows. The bright core is liquid; the darker ring has solidified, with columnar grains growing inward from the fusion boundary toward the center.",
+   "confidence": "literature",
+   "sources": [
+    "awshb7-v1:307",
+    "nstu-rsw-almg",
+    "osaka-jwri39-166",
+    "asee-solidification"
+   ],
+   "numbers_ok": false,
+   "note": "Proportion warning: handbook examples put nuggets at about 3 to 5 times a single sheet's thickness; the drawn nugget is about 2 times. See references/proportions.md.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-haz",
+   "ui": "hover:haz",
+   "text": "Heat-affected zone (HAZ): sheet metal that did not melt but was heated enough to change its microstructure. It surrounds the nugget and keeps developing as heat conducts away. Width drawn is illustrative.",
+   "confidence": "literature",
+   "sources": [
+    "iitkgp-weldzone",
+    "nstu-rsw-almg"
+   ],
+   "numbers_ok": false,
+   "note": "HAZ width drawn is illustrative.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-indent",
+   "ui": "hover:indent",
+   "text": "Indentation: the electrodes press into the softened sheet surfaces during the weld, leaving a permanent dimple. One source reports the dents come from surface softening and can be reduced by adequate force, so lowering force to reduce indentation can backfire. Excessive indentation thins the nugget cross-section. Depth drawn is illustrative.",
+   "confidence": "literature",
+   "sources": [
+    "hirsch-leibovitz-unitrol"
+   ],
+   "numbers_ok": false,
+   "note": "Single-source claim about indentation cause.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-current",
+   "ui": "hover:current",
+   "text": "Welding current: heat is H = I squared times R times t (current, resistance, time) at each resistance in the circuit: electrode-to-work contacts, the work-to-work contact, the body of the workpieces and the electrodes. Heat losses grow with weld time, so long welds need more energy. Drawn as a level, not a waveform; AC and DC machines both exist.",
+   "confidence": "established",
+   "sources": [
+    "awshb7-v1:39",
+    "awshb7-v1:40",
+    "us5349153",
+    "awshb8-v3:75"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-expel",
+   "ui": "hover:expel",
+   "text": "Expulsion: when the molten volume grows too large for the surrounding solid metal to contain under the electrode force, molten metal is expelled from the weld zone. The weld is then thinner and weaker. Shown only in the too-much-heat case; amount and direction are illustrative.",
+   "confidence": "literature",
+   "sources": [
+    "nstu-rsw-almg",
+    "wikipedia-erw",
+    "hirsch-leibovitz-unitrol"
+   ],
+   "numbers_ok": false,
+   "note": "Amount and direction of expelled metal are illustrative.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-h-tl",
+   "ui": "hover:tl",
+   "text": "Process timeline (not to scale in time). Top to bottom: stage bands, electrode force, and welding current. The stages are squeeze, weld, hold and off. Drag left to right, or use the slider or stage buttons.",
+   "confidence": "illustrative",
+   "sources": [],
+   "numbers_ok": false,
+   "note": "Describes the timeline strip.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-s-0",
+   "ui": "stage:0",
+   "text": "Squeeze. The electrodes close and clamp the sheets, giving electrical contact and pressure that contains the molten metal at the center of the joint. Force builds before current flows, because contact resistance falls as force rises, which makes the heating predictable. If current starts before full force is reached, expulsion and short electrode life can result.",
+   "confidence": "literature",
+   "sources": [
+    "awshb7-v1:14",
+    "awshb7-v1:39",
+    "hirsch-leibovitz-unitrol",
+    "us4419558"
+   ],
+   "numbers_ok": false,
+   "note": "The forum source was replaced by handbook and paper support.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-s-1",
+   "ui": "stage:1",
+   "text": "Weld. Current flows through the electrodes and sheets, and heat is generated in proportion to I squared times R at each resistance in the circuit. In steel the contact resistance between the sheets largely disappears within the first half cycle, but the early heating it allows raises the metal's own resistance. The nugget grows outward and through the thickness, while water-cooled copper electrodes keep the sheet surfaces below melting.",
+   "confidence": "literature",
+   "sources": [
+    "awshb7-v1:39",
+    "awshb7-v1:40",
+    "us5349153",
+    "nstu-rsw-almg",
+    "osaka-jwri39-166"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-s-2",
+   "ui": "stage:2",
+   "text": "Hold. The current stops but the force is maintained while the nugget cools and solidifies. A handbook notes the force is kept on the nugget during solidification and cooling, and holding it gives forging action that helps prevent shrinkage voids. Solidification runs from the fusion boundary inward, with columnar grains growing toward the center.",
+   "confidence": "literature",
+   "sources": [
+    "awshb8-v3:76",
+    "us5349153",
+    "asee-solidification",
+    "nstu-rsw-almg"
+   ],
+   "numbers_ok": false,
+   "note": "The force-during-solidification statement in the 1996 volume is made for aluminium roll-spot welding.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-s-3",
+   "ui": "stage:3",
+   "text": "Off. The force is released and the electrodes open. A permanent indentation remains on each surface. Around the nugget is the heat-affected zone, then unaffected base metal. The next weld repeats the cycle.",
+   "confidence": "illustrative",
+   "sources": [],
+   "numbers_ok": false,
+   "note": "Describes the end of the cycle; no source needed.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-s-hot",
+   "ui": "stage-hot",
+   "text": "Too much heat. If the molten volume gets too large for the surrounding solid metal to contain under the electrode force, molten metal is expelled from the weld zone, leaving a thinner, weaker weld and heavier indentation.",
+   "confidence": "literature",
+   "sources": [
+    "nstu-rsw-almg",
+    "wikipedia-erw",
+    "hirsch-leibovitz-unitrol"
+   ],
+   "numbers_ok": false,
+   "note": "Appended to the weld and hold stage text in the too-much-heat case.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-f-cycle",
+   "ui": "footnote:The cycle",
+   "text": "Close the electrodes and apply force (squeeze time); initiate and maintain current (weld time); turn off the current and hold force until the nugget solidifies (hold time); open the electrodes (off time, defined as the time the electrodes are off the work, generally used when the cycle repeats). Controls can add preheat, postheat after a cooling period, and up-down slope. The same four intervals appear in a university course slide set that cites the AWS Welding Handbook.",
+   "confidence": "literature",
+   "sources": [
+    "us4419558",
+    "awshb7-v1:15",
+    "awshb7-v1:307",
+    "osu-we601-slides"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-f-heat",
+   "ui": "footnote:Where the heat comes from",
+   "text": "Heat is generated as I squared R times t (heat in joules, current, resistance, time). The resistance is made of four parts: the contacts between electrodes and work, the contact between the workpieces, the body resistance of the workpieces, and the electrodes. Contact resistance depends on cleanliness, oxides and roughness, and is inversely proportional to force; in steel it largely disappears within the first half cycle, but the early heating raises the metal's own resistance. Copper's high conductivity and water cooling keep the sheet surfaces below melting, and the nugget develops first at the sheet-to-sheet interface. An example in the 1976 volume estimates only about one third of the energy goes into melting the nugget; the rest heats surrounding metal and is lost.",
+   "confidence": "literature",
+   "sources": [
+    "awshb7-v1:39",
+    "awshb7-v1:40",
+    "us5349153",
+    "nstu-rsw-almg",
+    "osaka-jwri39-166"
+   ],
+   "numbers_ok": true,
+   "note": "The one-third figure is from a worked example with assumed values; it is not shown as a measurement.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-f-force",
+   "ui": "footnote:Force, squeeze and hold",
+   "text": "Force keeps electrical and thermal contact and provides forging pressure that helps avoid shrinkage voids; hold time sets the cooling rate. A conference paper with test data reports that low electrode force, or starting current before full force is reached, causes expulsion and heavier indentation, that expulsion also occurs when weld time is too long, and that high force gives shallow nuggets with low ductility. Squeeze time exists to let force build.",
+   "confidence": "literature",
+   "sources": [
+    "us5349153",
+    "hirsch-leibovitz-unitrol",
+    "awsforum-126723"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "rsw-f-zones",
+   "ui": "footnote:Zones, solidification and expulsion",
+   "text": "The joint has a fusion zone (the cast nugget), a heat-affected zone and base metal, with columnar dendrites at the fusion boundary; if the molten volume is too large for the surrounding solid metal to contain under the force, molten metal is expelled, leaving a thinner, weaker weld. Solidification from the fusion boundary toward the center is described in a welding-solidification teaching paper.",
+   "confidence": "literature",
+   "sources": [
+    "nstu-rsw-almg",
+    "wikipedia-erw",
+    "asee-solidification"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  }
+ ]
+}

@@ -1,0 +1,440 @@
+{
+ "meta": {
+  "figure": "gmaw-mig",
+  "title": "What the figure shows, and how sure we are",
+  "unsourced": "Exact end-of-weld ordering for a travelling weld and the drawn timings are schematic. The AWS Welding Handbook (9th ed., vol. 2) was read for chapter 4 pages 150-154, 157, 164, 181, 183 and 195-196 only; its parameter tables (for example Table 4.1 transition currents) were not used. AWS C5.6 (cited by the handbook) was not consulted.",
+  "simplified": "One flat-position single pass on a plate, in longitudinal section, with solid wire. No joint geometry, globular or pulsed transfer, inductance control, flux-cored wire or spatter. The short-circuit cycle and the spray droplet stream are drawn at invented, slow rates; the wire tip, droplet size, arc shape, pool shape, crown height, HAZ width and grain lines are illustrative. In the model spray transfer gives a larger pool than short-circuit, as a qualitative reading of the sources, not a measurement.",
+  "disclaimer": "For education only. This is not a welding procedure specification or a substitute for your WPS, applicable code, training or workplace safety rules, including eye, skin and respiratory protection."
+ },
+ "claims": [
+  {
+   "id": "gmaw-h-wire",
+   "ui": "hover:wire",
+   "text": "Consumable wire electrode: fed continuously through the contact tip; it is both the arc's electrode and the filler metal, so it melts into the pool. Most commonly a constant-voltage power source is used with a constant-speed feeder, and raising the wire feed speed raises the current; alternatively a constant-current source is used with an arc-voltage-controlled feeder. Tick marks show feed motion, not a feed rate.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:150",
+    "awshb9-v2p1:164",
+    "toolingu-gmaw251",
+    "ewi-gmaw-basics"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-ctip",
+   "ui": "hover:ctip",
+   "text": "Contact tip: usually copper; it passes welding current into the wire. Contact tip to work distance (CTWD) is the electrode extension plus the arc length. Tips plug or wear with use.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:196",
+    "toolingu-gmaw251"
+   ],
+   "numbers_ok": false,
+   "note": "The earlier claim that tips are bored to the wire size was dropped as unsourced; wear and plugging appear in the handbook's troubleshooting table.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-nozzle",
+   "ui": "hover:nozzle",
+   "text": "Gas nozzle: directs shielding gas around the wire and over the pool. Drawn as a cut-away so the contact tip and gas path are visible. The tip is recessed inside the nozzle.",
+   "confidence": "illustrative",
+   "sources": [],
+   "numbers_ok": false,
+   "note": "The statement that the tip is recessed inside the nozzle is a drawing choice.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-gas",
+   "ui": "hover:gas",
+   "text": "Shielding gas: spray transfer needs an argon-rich gas (at least 80% argon). Carbon dioxide gives deeper penetration but more spatter and non-axial globular transfer at higher current, and argon-carbon dioxide mixtures are often used on carbon and low-alloy steels as a compromise. Particle count shows gas on or off, not a flow rate.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:152",
+    "awshb9-v2p1:153",
+    "openwa-gmaw",
+    "kim-eagar-1993"
+   ],
+   "numbers_ok": true,
+   "note": "The 80 percent figure is in the handbook (p. 153) and Open WA.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-stick",
+   "ui": "hover:stick",
+   "text": "Stickout (electrode extension): the distance from the end of the contact tip to the end of the electrode. A longer extension has more electrical resistance, so resistance heating of the wire rises while arc heating of the work and penetration fall. The arc length is self-regulating: if the gun-to-work distance suddenly increases, the arc lengthens, current falls, melt-off slows while the feed rate stays the same, and the arc shortens until melt-off again equals the feed rate.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:150",
+    "awshb9-v2p1:183",
+    "us5349156"
+   ],
+   "numbers_ok": false,
+   "note": "Resolves the earlier reliance on a patent alone.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-arc",
+   "ui": "hover:arc",
+   "text": "Arc: plasma between the wire tip (anode in DCEP) and the work (cathode). DCEP is used in the vast majority of GMAW; it gives a stable arc, smooth metal transfer, relatively low spatter and the greatest depth of penetration over a wide range of current. Brightness follows current. In short-circuit transfer the arc goes out each time the droplet bridges to the pool.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:181",
+    "awshb9-v2p1:151",
+    "toolingu-gmaw251"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-drop0",
+   "ui": "hover:drop0",
+   "text": "Short-circuit transfer: the electrode touches the pool about 20 to over 200 times per second, and metal transfers only during contact. When the wire touches, the current rises and the molten tip pinches off, restarting the arc; the rate of current rise is set by the inductance in the power source. It uses the lowest currents and wire diameters, giving a small, fast-freezing pool suited to thin sections, out-of-position welding and bridging large root openings. Cycle timing drawn here is illustrative.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:151",
+    "awshb9-v2p1:152",
+    "us6013896"
+   ],
+   "numbers_ok": true,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-drop1",
+   "ui": "hover:drop1",
+   "text": "Spray transfer: with an argon-rich gas (at least 80% argon) and DCEP, above the spray transition current the wire transfers very small drops at hundreds per second, accelerated axially across the arc; the drops are smaller than the arc length, so short circuits do not occur and spatter is negligible. Below the transition current transfer is globular, at a few drops per second. The handbook says the electromagnetic pinch force, a function of current and wire diameter, is usually responsible for drop detachment. Spray gives narrow, deep, finger-like penetration. The transition current depends on wire diameter, extension, filler melting temperature and gas. A research study found the change from globular to spray gradual rather than abrupt and argued the pinch-instability model does not describe it. Droplet size and rate here are illustrative.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:153",
+    "awshb9-v2p1:154",
+    "kim-eagar-1993",
+    "weldguru-transfer"
+   ],
+   "numbers_ok": true,
+   "note": "Replaces the earlier wording that dropped 'pinch force'. The handbook (pinch force detaches drops) and Kim and Eagar (pinch-INSTABILITY theory is inadequate) are about different things. Figure gap: spray penetration is finger-like (narrow and deep); the drawn pool is a half-ellipse.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-pool",
+   "ui": "hover:pool",
+   "text": "Weld pool: liquid base metal plus melted filler. Convection comes from electromagnetic (Lorentz) force, surface-tension (Marangoni) gradients, buoyancy and arc drag, plus the momentum of arriving droplets. The loops drawn are illustrative and flow direction depends on composition (for example sulfur and oxygen).",
+   "confidence": "literature",
+   "sources": [
+    "wang-tsai-2001",
+    "jmep-sulfur-oxygen"
+   ],
+   "numbers_ok": false,
+   "note": "Wang and Tsai model SPOT GMAW (stationary pool), not a travelling torch.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-weld",
+   "ui": "hover:weld",
+   "text": "Solidified weld metal (fusion zone), raised above the plate surface by the filler metal (the crown). It solidified from the fusion boundary inward: grains grow epitaxially from the unmelted grains and continue roughly perpendicular to the pool boundary toward the heat source (columnar). Grain lines are schematic.",
+   "confidence": "literature",
+   "sources": [
+    "asee-solidification",
+    "dtic-ada137272"
+   ],
+   "numbers_ok": false,
+   "note": "Crown height and grain lines are illustrative.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-haz",
+   "ui": "hover:haz",
+   "text": "Heat-affected zone (HAZ): base metal that did not melt but was heated enough to change its microstructure. It forms beyond the fusion boundary as heat conducts into the plate, so it keeps developing after the pool has passed. Width drawn is illustrative.",
+   "confidence": "literature",
+   "sources": [
+    "iitkgp-weldzone"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-base",
+   "ui": "hover:base",
+   "text": "Base metal: plate far enough from the weld to be unchanged by it. Drawn as a longitudinal section along the weld axis, single pass, flat position.",
+   "confidence": "illustrative",
+   "sources": [],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-h-tl",
+   "ui": "hover:tl",
+   "text": "Process timeline (not to scale in time). Top to bottom: stage bands, welding current (touch surge, ramp up, steady, ramp down), wire feed, shielding gas, and torch travel. Drag left to right, or use the slider or stage buttons.",
+   "confidence": "illustrative",
+   "sources": [],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-s-0",
+   "ui": "stage:0",
+   "text": "Gas and wire feed. The trigger starts shielding gas and advances the wire toward the work. Gas control can allow some gas to flow before welding (preflow) and after it stops (postflow) to protect the weld pool. Most commonly a constant-voltage source is used with a constant-speed feeder, and wire feed speed sets the current.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:150",
+    "awshb9-v2p1:164",
+    "toolingu-gmaw251",
+    "ewi-gmaw-basics"
+   ],
+   "numbers_ok": false,
+   "note": "Preflow and postflow are described in the handbook (p. 164); machines still vary.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-s-1",
+   "ui": "stage:1",
+   "text": "Arc start. Common practice runs the wire in until it touches the work; the touch completes the circuit and current flows, with a high surge current when the arc strikes. A touch-start feature begins wire feed only when the electrode touches the work, and a slow run-in feeds slowly until the arc starts and then speeds up; the handbook describes both mainly with constant-current power sources and for aluminium. Feed rate and power then ramp to steady-state values.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:164",
+    "us20200130094",
+    "us4079231"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-s-2",
+   "ui": "stage:2",
+   "text": "Pool growth. The arc melts both the wire tip and the base metal, so the wire is heat source and filler. Arc length is self-regulating: if it lengthens, current falls, melt-off slows while the feed rate stays the same, and the arc shortens. A longer extension adds resistance heating of the wire and reduces arc heating of the work. The pool deepens and widens, and filler builds a crown above the plate.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:150",
+    "awshb9-v2p1:183",
+    "us5349156"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-s-3",
+   "ui": "stage:3",
+   "text": "Travel. The wire feeds continuously and metal crosses the arc as short-circuit or spray transfer (toggle above the figure). The pool trails the arc and freezes at its rear into the bead. Pool flow comes from Lorentz force, Marangoni gradients, buoyancy, arc drag and droplet momentum; loop directions here are illustrative.",
+   "confidence": "literature",
+   "sources": [
+    "weldguru-transfer",
+    "openwa-gmaw",
+    "kim-eagar-1993",
+    "wang-tsai-2001"
+   ],
+   "numbers_ok": false,
+   "note": "Loop directions illustrative.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-s-4",
+   "ui": "stage:4",
+   "text": "Arc end. Wire feed stops and the current falls, so the arc and pool shrink. In GMAW spot welding the handbook describes a current decay period to fill the crater and leave a desirable reinforcement contour, and a crater crack can form at the end of a weld.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:157",
+    "awshb9-v2p1:195"
+   ],
+   "numbers_ok": false,
+   "note": "The current-decay statement is made for GMAW spot welding; applying it to a travelling weld is an extrapolation. NEEDS CHECK with the expert.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-s-5",
+   "ui": "stage:5",
+   "text": "Post-flow and freeze. Gas keeps shielding the cooling weld; the handbook describes postflow as protecting the weld pool. Solidification starts at the fusion boundary: grains grow epitaxially from the unmelted base-metal grains, roughly perpendicular to the pool boundary and toward the heat source (columnar growth). Heat conducted into the plate changes its microstructure beyond the fusion line: the heat-affected zone.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:164",
+    "asee-solidification",
+    "iitkgp-weldzone"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-f-process",
+   "ui": "footnote:Process set-up",
+   "text": "GMAW uses a consumable wire electrode that is also the filler metal, a wire feeder and shielding gas. The usual combination is a constant-voltage power source with a constant-speed feeder, with amperage following wire feed speed; contact tip to work distance is electrode extension plus arc length, and the extension is measured from the end of the contact tip. DCEP is used in the vast majority of applications and gives a stable arc, smooth transfer, relatively low spatter and the greatest penetration.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:150",
+    "awshb9-v2p1:164",
+    "awshb9-v2p1:181",
+    "awshb9-v2p1:183",
+    "toolingu-gmaw251",
+    "ewi-gmaw-basics",
+    "mewelding-dcep"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-f-self-regulating",
+   "ui": "footnote:Self-regulating arc length",
+   "text": "With a constant-voltage source and constant-speed feeder, a longer arc lowers the current, melt-off slows while feed rate stays the same, and the arc shortens until melt-off again equals feed rate; the final current at a longer extension is lower, because resistance heating of the extension rises while arc heating of the work falls.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:150",
+    "us5349156"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-f-arc",
+   "ui": "footnote:Arc start",
+   "text": "Conventional initiation runs the wire in until it touches the work; contact completes the circuit and current begins to flow, after which feed rate and power ramp to steady-state values. A high surge current develops when the arc is first struck. The surge as drawn in the timeline is schematic.",
+   "confidence": "literature",
+   "sources": [
+    "us20200130094",
+    "us4079231"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-f-metal",
+   "ui": "footnote:Metal transfer",
+   "text": "The handbook names three transfer modes: short-circuiting, globular and spray. Short-circuit transfer occurs 20 to over 200 times per second at the lowest currents, with inductance setting how fast current rises. Globular transfer uses drops larger than the electrode and is limited by gravity to the flat position; with carbon dioxide it becomes non-axial. Spray transfer needs DCEP, an argon-rich gas (at least 80%) and a current above the spray transition current, and gives narrow, deep penetration; the pinch force, a function of current and wire diameter, is usually responsible for drop detachment. Pulsed GMAW alternates a low background current with pulses above the transition current, giving spray transfer at lower average current. A peer-reviewed study finds the globular-to-spray change gradual and argues the pinch-instability explanation does not fit globular or projected spray transfer, favouring a static force balance that includes the electromagnetic force. Globular and pulsed transfer are not drawn.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:150",
+    "awshb9-v2p1:151",
+    "awshb9-v2p1:152",
+    "awshb9-v2p1:153",
+    "awshb9-v2p1:154",
+    "us6013896",
+    "weldguru-transfer",
+    "kim-eagar-1993",
+    "openwa-gmaw",
+    "jwjs-30-1"
+   ],
+   "numbers_ok": true,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gmaw-f-pool",
+   "ui": "footnote:Pool flow, solidification and zones",
+   "text": "Convection comes from Marangoni, buoyancy, arc drag and electromagnetic forces, with droplet momentum added in GMAW (the cited GMAW model is of spot GMAW). Epitaxial growth and growth roughly perpendicular to the pool boundary are described in a teaching paper; fusion zone, partially melted zone and HAZ are defined by a university virtual lab.",
+   "confidence": "literature",
+   "sources": [
+    "jmep-sulfur-oxygen",
+    "wang-tsai-2001",
+    "asee-solidification",
+    "iitkgp-weldzone"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  }
+ ]
+}

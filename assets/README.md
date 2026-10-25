@@ -1,0 +1,1 @@
+Reference images go here (etched macro cross-sections, test photos), each with a caption file `<name>.txt` giving process, material, thickness, conditions, scale and what it shows. Nothing has been supplied yet. See references/reference-intake.md.

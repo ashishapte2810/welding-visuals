@@ -1,0 +1,370 @@
+{
+ "meta": {
+  "figure": "gtaw-tig",
+  "title": "What the figure shows, and how sure we are",
+  "unsourced": "Typical post-flow durations, slope times and every welding parameter are not shown, because the sources read do not give values for them. The AWS Welding Handbook (9th ed., vol. 2) was read for chapters 1 (pp. 27, 41), 3 (GTAW) and parts of 2 and 4 only; its tables were not used. Paid standards such as AWS A5.12 were not consulted. Drawn timings are schematic.",
+  "simplified": "One flat-position autogenous pass on a plate, drawn in longitudinal section. No filler wire, joint geometry, AC waveform, pulsing, back-purge or tungsten tip shape. Pool shape is a half-ellipse that lengthens behind the arc; real pools depend on current, speed, material and shielding gas. Arc and pool size, depth, HAZ width and grain lines are illustrative and are not drawn to any process values. The plasma is a bell shape, and the arc-start spark is stretched from milliseconds to a visible stage.",
+  "disclaimer": "For education only. This is not a welding procedure specification or a substitute for your WPS, applicable code, training or workplace safety rules, including eye, skin and respiratory protection."
+ },
+ "claims": [
+  {
+   "id": "gtaw-h-elec",
+   "ui": "hover:elec",
+   "text": "Tungsten electrode: it is one electrical terminal of the arc, and when the process is used properly it does not melt or transfer to the weld. Tungsten becomes thermionic near its melting point, and the electrons leaving the tip cool it, so the tip runs cooler than the metal just behind it. Alloying with oxides that have a low work function (thoria, ceria, lanthana) improves starting, arc stability and electrode life; thoriated electrodes carry about 20% more current than pure tungsten. In DCEP the tip is heated by electron impact and carries only about 10% of the DCEN current. A larger included angle at the ground tip gives deeper penetration and a narrower bead. Tip shape drawn is schematic.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:113",
+    "awshb9-v2p1:114",
+    "awshb9-v2p1:115",
+    "yarmuch-patchett-2007"
+   ],
+   "numbers_ok": true,
+   "note": "Replaces the earlier unsourced 'emits at lower temperature' wording. Percentages are from the handbook text (OCR); check against the page image.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-h-cup",
+   "ui": "hover:cup",
+   "text": "Gas cup (nozzle): carries the shielding gas around the electrode and over the pool; drawn as a cut-away. A gas lens gives a longer undisturbed gas flow, which lets the welder hold the nozzle farther from the work and tilt the torch more, with more tungsten extension.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:113"
+   ],
+   "numbers_ok": false,
+   "note": "Replaces the earlier unsourced 'many sizes' wording.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-h-gas",
+   "ui": "hover:gas",
+   "text": "Shielding gas: argon is the usual choice because it gives a stable arc with DC or AC and costs less. A helium-shielded arc is generally hotter and more penetrating than an argon arc, and the cathodic cleaning action in AC needs argon because sputtering does not occur with helium. Argon is heavier than air. Particle count shows gas on or off, not a flow rate.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:106",
+    "toolingu-gtaw331"
+   ],
+   "numbers_ok": false,
+   "note": "Resolves the earlier NEEDS CHECK on helium.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-h-arc",
+   "ui": "hover:arc",
+   "text": "Arc: a plasma between the tungsten cathode and the work (the anode). It has five regions: cathode spot, cathode fall, plasma column, anode fall and anode spot. In DCEN, electrons flow from the electrode to the work and positive ions from the work to the electrode, and the handbook gives approximately 70% of the heat generated at the work and 30% at the electrode, which is why DCEN gives deeper penetration than DCEP. Other published figures are 60 to 80% at the anode (aluminium) and about two thirds. Brightness follows current.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:119",
+    "yarmuch-patchett-2007",
+    "twi-polarity-faq"
+   ],
+   "numbers_ok": true,
+   "note": "Three sources agree on roughly two thirds to 70 percent at the work.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-h-pool",
+   "ui": "hover:pool",
+   "text": "Weld pool: the liquid metal under the arc. It is longer behind the arc than ahead of it while travelling, because metal melts at the leading edge and freezes at the trailing edge. Convection is driven by electromagnetic (Lorentz) force, surface-tension gradients (Marangoni), buoyancy and arc drag; the loops drawn are illustrative, and the flow direction depends on composition (for example sulfur and oxygen).",
+   "confidence": "literature",
+   "sources": [
+    "oreper-szekely-1984",
+    "jmep-sulfur-oxygen",
+    "mendez-graz"
+   ],
+   "numbers_ok": false,
+   "note": "Loop directions drawn are illustrative.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-h-weld",
+   "ui": "hover:weld",
+   "text": "Solidified weld metal (fusion zone). It solidified from the fusion boundary inward: grains grow epitaxially from the unmelted grains and continue roughly perpendicular to the pool boundary, toward the heat source, giving columnar grains. Grain lines are schematic.",
+   "confidence": "literature",
+   "sources": [
+    "asee-solidification",
+    "dtic-ada137272"
+   ],
+   "numbers_ok": false,
+   "note": "Grain lines are schematic.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-h-haz",
+   "ui": "hover:haz",
+   "text": "Heat-affected zone (HAZ): base metal that did not melt but was heated enough to change its microstructure. It forms outside the fusion boundary as heat conducts into the plate, which is why it keeps developing after the pool has passed. Width drawn is illustrative.",
+   "confidence": "literature",
+   "sources": [
+    "iitkgp-weldzone"
+   ],
+   "numbers_ok": false,
+   "note": "HAZ width drawn is illustrative.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-h-base",
+   "ui": "hover:base",
+   "text": "Base metal: plate far enough from the weld to be unchanged by it. Drawn as a longitudinal section along the weld axis, autogenous (no filler), flat position.",
+   "confidence": "illustrative",
+   "sources": [],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-h-tl",
+   "ui": "hover:tl",
+   "text": "Process timeline (not to scale in time). Top to bottom: stage bands, welding current (pre-flow, HF start, upslope, steady current, downslope), shielding gas on or off, and torch travel. Drag left to right, or use the slider or the stage buttons.",
+   "confidence": "illustrative",
+   "sources": [],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-s-0",
+   "ui": "stage:0",
+   "text": "Pre-flow. Shielding gas starts before the arc, so the electrode and the start point are already under gas when the arc strikes. Many GTAW power sources include shielding-gas control and current up-slope and down-slope. Argon is heavier than air and displaces it around the joint.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:119",
+    "openwa-gtaw",
+    "toolingu-gtaw331",
+    "haynes-gtaw"
+   ],
+   "numbers_ok": false,
+   "note": "The handbook's pre-flow and post-flow wording is in the GMAW chapter (p. 164); the GTAW chapter mentions gas control and slope only in passing.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-s-1",
+   "ui": "stage:1",
+   "text": "Arc start. The handbook lists touch start (scratch or lift), high-frequency, pulse and pilot-arc start. With high-frequency start a spark-gap oscillator superimposes a high-voltage radio-frequency output; the high voltage ionizes the gas between the electrode and the work, and the ionized gas conducts the welding current that starts the arc, with no contact. A touch start is simpler, but the electrode can stick, which contaminates it and transfers tungsten to the work. The current then ramps up (upslope).",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:128",
+    "awshb9-v2p1:129",
+    "awshb9-v2p1:119",
+    "openwa-gtaw",
+    "us12343825"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-s-2",
+   "ui": "stage:2",
+   "text": "Pool growth. In DCEN the tungsten is the cathode and the work is the anode. Electrons leave the tip, and about 70% of the heat is generated at the work, which is why DCEN gives deeper penetration than DCEP. The surface melts and the pool deepens and widens while the torch dwells.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:119",
+    "yarmuch-patchett-2007",
+    "twi-polarity-faq"
+   ],
+   "numbers_ok": true,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-s-3",
+   "ui": "stage:3",
+   "text": "Travel. Metal melts at the leading edge and freezes at the trailing edge, so the pool stretches behind the arc. Pool flow comes from Lorentz force, Marangoni (surface-tension) gradients, buoyancy and arc drag; Marangoni flow tends to dominate at lower currents, and trace sulfur or oxygen can change penetration. Loop directions here are illustrative.",
+   "confidence": "literature",
+   "sources": [
+    "oreper-szekely-1984",
+    "mendez-graz",
+    "jmep-sulfur-oxygen"
+   ],
+   "numbers_ok": false,
+   "note": "Loop directions illustrative.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-s-4",
+   "ui": "stage:4",
+   "text": "Downslope. The current is ramped down gradually (a foot control or a programmed downslope) rather than cut abruptly. The handbook describes gradual current decrease as of great assistance in crater filling for GTAW. The last liquid freezes where the torch stopped; a crater is a depression in the weld face at the very end of the weld.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:27",
+    "awshb9-v2p1:41",
+    "awshb9-v2p1:55"
+   ],
+   "numbers_ok": false,
+   "note": "Resolves the earlier unsourced status of downslope and crater. The crater definition is from the SMAW chapter (p. 55); the GTAW-specific statement is on p. 27.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-s-5",
+   "ui": "stage:5",
+   "text": "Post-flow and freeze. Gas keeps flowing after the arc goes out; the handbook warns the hot tungsten can oxidize if gas flow is insufficient during welding or after the arc has been extinguished. Solidification starts at the fusion boundary: grains grow epitaxially from the unmelted base-metal grains, roughly perpendicular to the pool boundary and toward the heat source (columnar growth). Heat conducted into the plate changes its microstructure beyond the fusion line: the heat-affected zone.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:116",
+    "asee-solidification",
+    "iitkgp-weldzone"
+   ],
+   "numbers_ok": false,
+   "note": "Post-flow duration is not given in the sources read and is not shown.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-f-arc",
+   "ui": "footnote:Arc and polarity",
+   "text": "In DCEN, electrons flow from the tungsten electrode to the work and positive ions from the work to the electrode. The handbook gives approximately 70 percent of the heat generated at the anode (the work) and 30 percent at the cathode, which is why DCEN gives deeper penetration than DCEP. A journal paper on GTAW of aluminium gives about 60 to 80 percent of the heat at the anode, describes five arc regions (anode spot, anode fall space, plasma column, cathode fall space, cathode spot) and thermionic emission at refractory cathodes such as tungsten; TWI quotes roughly two thirds at the anode and notes the tungsten cathode is cooled by thermionic emission.",
+   "confidence": "established",
+   "sources": [
+    "awshb9-v2p1:119",
+    "yarmuch-patchett-2007",
+    "twi-polarity-faq"
+   ],
+   "numbers_ok": true,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-f-process",
+   "ui": "footnote:Process set-up",
+   "text": "Four components are common to every GTAW setup: a torch, the electrode, a power source and shielding gas. DCEN is the most common configuration, and DCEP is rarely used because it overheats the electrode and heats the work less. Power sources can include shielding-gas control and current up-slope and down-slope, and a gradual decrease of current is described as of great assistance in crater filling. Arc starting methods are touch (scratch or lift) start, high-frequency start, pulse start and pilot-arc start; touch starts can stick the electrode and transfer tungsten to the work, whereas high-frequency start ionizes the gas without contact. Tungsten can oxidize if gas flow is insufficient after the arc is extinguished. Argon is heavier than air.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:27",
+    "awshb9-v2p1:105",
+    "awshb9-v2p1:106",
+    "awshb9-v2p1:116",
+    "awshb9-v2p1:119",
+    "awshb9-v2p1:128",
+    "awshb9-v2p1:129",
+    "haynes-gtaw",
+    "openwa-gtaw",
+    "us12343825",
+    "toolingu-gtaw331"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-f-pool",
+   "ui": "footnote:Pool flow and shape",
+   "text": "Convection depends on surface-tension gradient (Marangoni), buoyancy, arc drag and electromagnetic force; sulfur and oxygen change penetration. Marangoni forces are reported to dominate at lower currents (under about 200 A), while at high current and travel speed (about 300 A, deeply depressed pool) gas shear dominates and sulfur has little effect on penetration. Two loops with outward surface flow are drawn as one common pattern; other patterns exist.",
+   "confidence": "literature",
+   "sources": [
+    "oreper-szekely-1984",
+    "jmep-sulfur-oxygen",
+    "mmtb-stationary-gta",
+    "mendez-graz"
+   ],
+   "numbers_ok": true,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-f-solidification",
+   "ui": "footnote:Solidification and zones",
+   "text": "Epitaxial growth from the unmelted grains at the fusion boundary, with growth roughly perpendicular to the solid-liquid boundary, is described in a teaching paper and observed at the fusion/HAZ interface; fusion zone, partially melted zone and HAZ are defined by a university virtual lab.",
+   "confidence": "literature",
+   "sources": [
+    "asee-solidification",
+    "dtic-ada137272",
+    "iitkgp-weldzone"
+   ],
+   "numbers_ok": false,
+   "note": "",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  },
+  {
+   "id": "gtaw-f-electrodes",
+   "ui": "footnote:Electrodes",
+   "text": "Tungsten electrode classes and their alloying oxides are defined in AWS A5.12. Pure tungsten is used mainly with AC and forms a balled tip; thoriated, ceriated and lanthanated electrodes are used mainly with DC and hold a ground tip. Too much current erodes or melts the tungsten, and particles falling into the pool count as defects; too little current causes arc instability. In the handbook, electrode diameter and current ranges are tabulated for argon shielding (Table 3.2); those values are not shown in the figure.",
+   "confidence": "literature",
+   "sources": [
+    "awshb9-v2p1:113",
+    "awshb9-v2p1:114",
+    "awshb9-v2p1:115"
+   ],
+   "numbers_ok": true,
+   "note": "Table 3.2 values deliberately not used; add only with units, conditions and a page check.",
+   "review": {
+    "status": "pending",
+    "reviewer": "",
+    "comment": ""
+   }
+  }
+ ]
+}
