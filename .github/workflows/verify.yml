@@ -1,0 +1,23 @@
+name: verify
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Install script dependencies
+        run: npm ci
+        working-directory: scripts
+      - name: Lint claim registries
+        run: for f in rsw gtaw gmaw; do node scripts/lint-claims.mjs claims/$f.json claims/sources.json; done
+      - name: Build figures
+        run: |
+          node examples/spot-weld-lifecycle/build.mjs
+          node examples/legacy/make-dist.mjs gtaw
+          node examples/legacy/make-dist.mjs gmaw
+      - name: Verify hosted pages
+        run: |
+          for p in examples/legacy/dist/gtaw-white examples/legacy/dist/gmaw-white examples/spot-weld-lifecycle/dist/spot-weld-white; do node scripts/verify-all.mjs $p.html; done
+          for p in examples/legacy/dist/gtaw-auto examples/legacy/dist/gmaw-auto examples/spot-weld-lifecycle/dist/spot-weld-auto; do node scripts/verify-all.mjs $p.html --auto; done

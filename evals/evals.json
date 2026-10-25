@@ -1,0 +1,123 @@
+{
+ "skill_name": "welding-visuals",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Make an interactive figure of resistance spot welding for apprentices: squeeze, weld, hold, off, with the nugget growing and a way to drag through the whole cycle. White background.",
+   "expected_output": "A single self-contained HTML file with a draggable timeline over four stages, hover text on parts, white background, copper electrodes, steel plates, a nugget that starts at the faying interface and freezes inward, a sources footer and an education-only note. Built from the registry and the shared kit; verification run and frames looked at.",
+   "files": [],
+   "expectations": [
+    "The page is one self-contained HTML file with no external scripts, stylesheets, images or fonts",
+    "A draggable timeline strip, a slider and stage buttons cover squeeze, weld, hold and off",
+    "The nugget starts at the faying interface between the sheets, not at the electrode faces",
+    "Every sentence shown comes from a claim in a registry file with sources and a confidence level",
+    "No number appears on screen that is not stated by a listed source",
+    "The footer says what is schematic, what is unsourced, and carries an education-only note",
+    "scripts/verify-all.mjs was run and its result reported, and frames were rendered and reviewed",
+    "The reply says the checks use a simulated browser and a real-browser check is still needed"
+   ]
+  },
+  {
+   "id": 2,
+   "prompt": "Now do TIG welding for engineers. Show arc start, the weld pool, travel and solidification. I will validate it with a welding specialist this afternoon.",
+   "expected_output": "A TIG figure with a draggable lifecycle, registry-backed text, and a review checklist the specialist can mark up; honest list of what was and was not read.",
+   "files": [],
+   "expectations": [
+    "A claim registry is created before the figure and a review checklist is produced from it",
+    "Each source has a read level (full, excerpt or snippet) and no author name appears in a label unless the first page was seen",
+    "Claims that go beyond the sources read are marked NEEDS CHECK",
+    "Polarity is DCEN and the figure says so; the heat split is attributed to a source with its scope (for example aluminium)",
+    "The reply lists what the specialist should check and what could not be sourced"
+   ]
+  },
+  {
+   "id": 3,
+   "prompt": "Add a MIG welding figure with a toggle between short-circuit and spray transfer.",
+   "expected_output": "A MIG figure with wire, contact tip, stickout, a droplet cycle that differs between modes, DCEP electron direction reversed from TIG, and a bead crown.",
+   "files": [],
+   "expectations": [
+    "Both transfer modes animate differently: short-circuit shows a droplet bridging the pool and the arc going out; spray shows a continuous arc and fine droplet stream",
+    "Electron flow is drawn from the work to the wire (DCEP), the reverse of the TIG figure",
+    "The text does not claim a sharp globular-to-spray threshold and does not call the detaching force the pinch force without qualification",
+    "Any pool-flow source for GMAW is described with its scope (for example a spot-GMAW model)",
+    "The model build check asserts that spray gives a larger pool than short-circuit and the registry marks that as qualitative"
+   ]
+  },
+  {
+   "id": 4,
+   "prompt": "Can you build a stick welding (SMAW) figure? I do not have any documents yet.",
+   "expected_output": "Proceeds as a Figure after confirming size; researches and reads sources before drawing; does not invent electrode classification, current ranges or slag chemistry; states that standards were not available.",
+   "files": [],
+   "expectations": [
+    "The reply proposes a Figure and confirms scope before building",
+    "Sources are searched and opened before any text is written, and the registry records how much of each was read",
+    "No current, voltage, electrode-class or flux-composition value appears unless a read source states it",
+    "The reply states that the AWS handbook and electrode specifications were not consulted and asks for them"
+   ]
+  },
+  {
+   "id": 5,
+   "prompt": "Put the recommended amperage and travel speed for 3 mm mild steel on the TIG figure.",
+   "expected_output": "Declines to supply values from memory; explains that values must come from the user's governing code or procedure; offers a qualitative level or asks for the document; keeps the mechanism-only scope.",
+   "files": [],
+   "expectations": [
+    "No amperage or travel-speed number is added to the figure from memory",
+    "The reply says values should come from the governing procedure or code and asks for the document and edition",
+    "The reply offers to illustrate the effect of current and speed qualitatively",
+    "The figure's education-only note is kept"
+   ]
+  },
+  {
+   "id": 6,
+   "prompt": "Here is a PDF chapter on resistance spot welding from our handbook (edition 2020). Use it to correct the figure.",
+   "expected_output": "Follows the intake procedure: logs the document, reads relevant sections, extracts claims in its own words with page numbers, resolves conflicts with existing claims, updates references and rebuilds.",
+   "files": [],
+   "expectations": [
+    "The document is logged in references/library/INDEX.md with edition, pages used and rights",
+    "New or changed claims cite page numbers in their note and are paraphrased, not copied",
+    "Any conflict with an existing claim is surfaced instead of silently overwritten",
+    "Numbers added carry numbers_ok with units and conditions from the page",
+    "The figure is rebuilt, re-verified and the live page republished in place"
+   ]
+  },
+  {
+   "id": 7,
+   "prompt": "Make an MP4 of the spot welding figure I can drop into a slide.",
+   "expected_output": "Exports a draft MP4 with scripts/export-video.mjs, says it is draft quality, and offers a real-browser screen recording for full fidelity.",
+   "files": [],
+   "expectations": [
+    "An MP4 is produced from the white page",
+    "The reply says the video is rendered by a vector renderer and soft glows look flatter than in a browser",
+    "The reply offers or explains a screen recording of the HTML for full fidelity"
+   ]
+  },
+  {
+   "id": 8,
+   "prompt": "The specialist says the nugget looks too big compared with the electrode, and a source you cited has the wrong author. Fix both.",
+   "expected_output": "Corrects the proportion with a build-time check, fixes the attribution after opening the document, updates the registry and references, republishes in place, and reports what changed.",
+   "files": [],
+   "expectations": [
+    "The nugget-to-electrode proportion is changed and the build check or its recorded range is updated",
+    "The attribution is verified by opening the document before the label is changed",
+    "claims/sources.json read-levels and notes are updated",
+    "The corrected pages are republished at the same links",
+    "The reply lists exactly what changed and what remains unverified"
+   ]
+  },
+  {
+   "id": 9,
+   "prompt": "I uploaded three reference books (AWS Welding Handbook volumes). Use them to strengthen the TIG, MIG and spot welding figures.",
+   "expected_output": "Identifies each book from its title pages (not its file name), logs edition and coverage gaps, reads relevant chapters with printed page numbers, verifies key numbers against page images, updates the claim registries with page citations, corrects any statement the books contradict, and reports what the books do not cover.",
+   "files": [],
+   "expectations": [
+    "Each book is identified from its title pages, and any mismatch with the file name or expected edition is reported",
+    "references/library/INDEX.md is updated with edition, pages used, rights and read level, without copying the PDFs into the skill",
+    "Claims cite printed page numbers obtained from page headers or footers, not a fixed PDF offset",
+    "Numbers taken from scanned (OCR) pages were checked against the page image",
+    "A figure statement that a book contradicts is corrected, and the reply says what changed",
+    "The reply states that no steel resistance-welding process chapter was in the supplied books and what would close the gap",
+    "Registries lint cleanly, verify-all passes for each hosted page, and the live pages are republished in place"
+   ]
+  }
+ ]
+}

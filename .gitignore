@@ -1,0 +1,14 @@
+# dependencies and build output
+node_modules/
+dist/
+examples/legacy/*-lifecycle*.html
+*.mp4
+*.gif
+# copyrighted or confidential reference material must never be committed
+*.pdf
+references/library/*.pdf
+references/library/files/
+assets/private/
+# editor / OS
+.DS_Store
+*.log
